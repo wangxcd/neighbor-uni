@@ -62,7 +62,7 @@
 
 ```bash
 # 克隆项目代码
-git clone https://github.com/example/neighbor-uni.git
+git clone https://github.com/wangxcd/neighbor-uni.git
 
 # 进入项目目录
 cd neighbor-uni
