@@ -1,0 +1,516 @@
+{
+  "pages": [
+    //pages数组中第一项表示应用启动页，参考：https://uniapp.dcloud.io/collocation/pages
+    {
+      "path": "pages/index/index",
+      "aliasPath": "/",
+      "name": "index",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "custom",
+        "enablePullDownRefresh": true
+      }
+    },
+    {
+      "path": "pages/home/index/index",
+      "aliasPath": "/home",
+      "name": "home",
+      "style": {
+        "navigationBarTitleText": "首页",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/home/issue/index",
+      "aliasPath": "/issue",
+      "name": "issue",
+      "style": {
+        "navigationBarTitleText": "信息发布",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/comment/index",
+      "aliasPath": "/comment",
+      "name": "comment",
+      "style": {
+        "navigationBarTitleText": "全部回复"
+      }
+    },
+    {
+      "path": "pages/home/index/city-pick",
+      "aliasPath": "/cityPick",
+      "name": "cityPick",
+      "style": {
+        "navigationBarTitleText": "城市选择",
+        "navigationStyle": "custom"
+      }
+    },
+    {
+      "path": "pages/home/index/comm-pick",
+      "aliasPath": "/commPick",
+      "name": "commPick",
+      "style": {
+        "navigationBarTitleText": "生活区选择",
+        "navigationStyle": "custom"
+      }
+    }
+  ],
+  "subPackages": [
+    {
+      "root": "pagesCommon",
+      "name": "common",
+      "pages": [
+        {
+          "path": "article/index",
+          "aliasPath": "/article",
+          "name": "article",
+          "style": {
+            "navigationBarTitleText": "系统文本",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "interact/index",
+          "aliasPath": "/interact-main",
+          "name": "interactMain",
+          "style": {
+            "navigationBarTitleText": "邻里互动正文",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    },
+    {
+      "root": "pagesIssue/issue/release",
+      "name": "issueRelease",
+      "pages": [
+        {
+          "path": "isu-form",
+          "aliasPath": "/isuForm",
+          "name": "isuForm",
+          "style": {
+            "navigationBarTitleText": "信息发布",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "form-normal",
+          "aliasPath": "/isuReleaseNormal",
+          "name": "isuReleaseNormal",
+          "style": {
+            "navigationBarTitleText": "信息发布",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "form-seek-labour",
+          "aliasPath": "/isuReleaseLabour",
+          "name": "isuReleaseLabour",
+          "style": {
+            "navigationBarTitleText": "找临时帮工信息发布",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "form-agent-take",
+          "aliasPath": "/isuReleaseAgentTake",
+          "name": "isuReleaseAgentTake",
+          "style": {
+            "navigationBarTitleText": "代取代送信息发布",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "form-agent-do",
+          "aliasPath": "/isuReleaseAgentDo",
+          "name": "isuReleaseAgentDo",
+          "style": {
+            "navigationBarTitleText": "代购代办信息发布",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "form-agent-trash",
+          "aliasPath": "/isuReleaseAgentTrash",
+          "name": "isuReleaseAgentTrash",
+          "style": {
+            "navigationBarTitleText": "代丢垃圾信息发布",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "form-agent-with",
+          "aliasPath": "/isuReleaseAgentWith",
+          "name": "isuReleaseAgentWith",
+          "style": {
+            "navigationBarTitleText": "陪玩陪练信息发布",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "form-wxqun",
+          "aliasPath": "/isuReleaseWxqun",
+          "name": "isuReleaseWxqun",
+          "style": {
+            "navigationBarTitleText": "微信群招募",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "form-shop-open",
+          "aliasPath": "/isuReleaseShopOpen",
+          "name": "isuReleaseShopOpen",
+          "style": {
+            "navigationBarTitleText": "社区开店",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        },
+        {
+          "path": "form-deving",
+          "aliasPath": "/isuReleaseDeving",
+          "name": "isuReleaseDeving",
+          "style": {
+            "navigationBarTitleText": "开发中",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": false
+          }
+        }
+      ]
+    },
+    {
+      "root": "pagesIssue/issue/display",
+      "name": "issueDisplay",
+      "pages": [
+        {
+          "path": "info-list",
+          "aliasPath": "/isuInfoList",
+          "name": "isuInfoList",
+          "style": {
+            "navigationBarTitleText": "信息列表",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "info-detail",
+          "aliasPath": "/isuInfoDetail",
+          "name": "isuInfoDetail",
+          "style": {
+            "navigationBarTitleText": "信息详情",
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": true
+          }
+        }
+      ]
+    },
+    {
+      "root": "pagesHandy",
+      "pages": [
+        {
+          "path": "index",
+          "aliasPath": "/handy",
+          "name": "handy",
+          "style": {
+            "navigationBarTitleText": "便民"
+          }
+        }
+      ]
+    },
+    {
+      "root": "pagesStore",
+      "name": "stores",
+      "pages": [
+        {
+          "path": "index",
+          "aliasPath": "/store",
+          "name": "store",
+          "style": {
+            "navigationBarTitleText": "小店/工作室",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "detail",
+          "aliasPath": "/storeDetail",
+          "name": "storeDetail",
+          "style": {
+            "navigationStyle": "custom",
+            "enablePullDownRefresh": true
+          }
+        }
+      ]
+    },
+    {
+      "root": "pagesUser",
+      "name": "users",
+      "pages": [
+        {
+          "path": "index",
+          "aliasPath": "/my",
+          "name": "my",
+          "style": {
+            "navigationBarTitleText": "用户中心",
+            "navigationBarBackgroundColor": "#e93323",
+            // #ifdef MP
+            "navigationBarTextStyle": "#fff"
+            // #endif
+          }
+        },
+        {
+          "path": "userinfo/index",
+          "aliasPath": "/userinfo",
+          "name": "userinfo",
+          "style": {
+            "navigationBarTitleText": "个人资料"
+          }
+        },
+        {
+          "path": "userinfo/user-phone",
+          "aliasPath": "/userPhone",
+          "name": "userPhone",
+          "style": {
+            "navigationBarTitleText": "修改手机号"
+          }
+        },
+        {
+          "path": "userinfo/user-money",
+          "aliasPath": "/userMoney",
+          "name": "userMoney",
+          "style": {
+            "navigationBarTitleText": "我的账户"
+          }
+        },
+        {
+          "path": "userinfo/user-coupon",
+          "aliasPath": "/userCoupon",
+          "name": "userCoupon",
+          "style": {
+            "navigationBarTitleText": "我的消费券"
+          }
+        },
+        {
+          "path": "userinfo/user-recharge",
+          "aliasPath": "/userRecharge",
+          "name": "userRecharge",
+          "style": {
+            "navigationBarTitleText": "账户充值"
+          }
+        },
+        {
+          "path": "userinfo/user-withdraw",
+          "aliasPath": "/userWithdraw",
+          "name": "userWithdraw",
+          "style": {
+            "navigationBarTitleText": "账户提现"
+          }
+        },
+        {
+          "path": "userinfo/user-coupon-buy",
+          "aliasPath": "/userCouponBuy",
+          "name": "userCouponBuy",
+          "style": {
+            "navigationBarTitleText": "购买消费券"
+          }
+        },
+        {
+          "path": "login/wechat",
+          "aliasPath": "/wechatLogin",
+          "name": "wechatLogin",
+          "style": {
+            "navigationBarTitleText": "账户登录",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "login/index",
+          "aliasPath": "/userLogin",
+          "name": "userLogin",
+          "style": {
+            "navigationBarTitleText": "登录"
+          }
+        },
+        {
+          "path": "livecomm/live-comm",
+          "aliasPath": "/liveComm",
+          "name": "liveComm",
+          "style": {
+            "navigationBarTitleText": "常居生活区",
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "livecomm/live-comm-add",
+          "aliasPath": "/liveCommAdd",
+          "name": "liveCommAdd",
+          "style": {
+            "navigationBarTitleText": "添加生活区"
+          }
+        },
+        {
+          "path": "livecomm/live-room",
+          "aliasPath": "/liveRoom",
+          "name": "liveRoom",
+          "style": {
+            "navigationBarTitleText": "住所位置",
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "livecomm/care-comm",
+          "aliasPath": "/careComm",
+          "name": "careComm",
+          "style": {
+            "navigationBarTitleText": "关注生活区",
+            "enablePullDownRefresh": true
+          }
+        },
+        {
+          "path": "livecomm/care-comm-add",
+          "aliasPath": "/careCommAdd",
+          "name": "careCommAdd",
+          "style": {
+            "navigationBarTitleText": "添加关注生活区"
+          }
+        },
+        {
+          "path": "myissue/myissue",
+          "aliasPath": "/myissue",
+          "name": "myissue",
+          "style": {
+            "navigationBarTitleText": "我的发布"
+          }
+        },
+        {
+          "path": "myissue/myjoin",
+          "aliasPath": "/myjoin",
+          "name": "myjoin",
+          "style": {
+            "navigationBarTitleText": "我的参与"
+          }
+        },
+        {
+          "path": "estate/index",
+          "aliasPath": "/estate",
+          "name": "estate",
+          "style": {
+            "navigationBarTitleText": "小区物业"
+          }
+        },
+        {
+          "path": "estate/joinapply",
+          "aliasPath": "/estateReg",
+          "name": "estateReg",
+          "style": {
+            "navigationBarTitleText": "物业登记",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "estate/membjoin",
+          "aliasPath": "/estateMemb",
+          "name": "estateMemb",
+          "style": {
+            "navigationBarTitleText": "物业工作员",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "merch/index",
+          "aliasPath": "/merch",
+          "name": "merch",
+          "style": {
+            "navigationBarTitleText": "我是商户"
+          }
+        },
+        {
+          "path": "merch/merchinfo",
+          "aliasPath": "/merchInfo",
+          "name": "merchInfo",
+          "style": {
+            "navigationBarTitleText": "商户信息"
+          }
+        },
+        {
+          "path": "merch/merchreg",
+          "aliasPath": "/merchReg",
+          "name": "merchReg",
+          "style": {
+            "navigationBarTitleText": "商户登记",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "merch/merchmemb",
+          "aliasPath": "/merchMemb",
+          "name": "merchMemb",
+          "style": {
+            "navigationBarTitleText": "商户员工",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "todo/approve",
+          "aliasPath": "/myApprove",
+          "name": "myApprove",
+          "style": {
+            "navigationBarTitleText": "我的待审批",
+            "navigationStyle": "custom"
+          }
+        },
+        {
+          "path": "spreadcode/index",
+          "aliasPath": "/spreadcode",
+          "name": "spreadcode",
+          "style": {
+            "navigationBarTitleText": "我的邀请码"
+          }
+        },
+        {
+          "path": "suggest/index",
+          "aliasPath": "/suggest",
+          "name": "suggest",
+          "style": {
+            "navigationBarTitleText": "投诉/建议"
+          }
+        }
+      ]
+    }
+  ],
+  "globalStyle": {
+    // #ifndef MP
+    "titleNView": false,
+    "rpxCalcMaxDeviceWidth": 960,
+    "rpxCalcBaseDeviceWidth": 375,
+    "rpxCalcIncludeWidth": 750,
+    // #endif
+    "navigationBarTextStyle": "black",
+    "navigationBarTitleText": "你居吾邻",
+    "navigationBarBackgroundColor": "#fff",
+    "backgroundColor": "#F8F8F8"
+  },
+  "condition": {
+    //模式配置，仅开发期间生效
+    "current": 0, //当前激活的模式(list 的索引项)
+    "list": [
+      {
+        "name": "", //模式名称
+        "path": "", //启动页面，必选
+        "query": "" //启动参数，在页面的onLoad函数里面得到
+      }
+    ]
+  },
+  // 如果您是通过uni_modules形式引入uView，可以忽略此配置
+  "easycom": {
+    "^u-(.*)": "@/uni_modules/uview-ui/components/u-$1/u-$1.vue"
+  }
+}

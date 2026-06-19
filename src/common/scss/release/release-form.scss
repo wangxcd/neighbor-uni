@@ -1,0 +1,301 @@
+.form-box {
+  .page-body {
+    background-color: #f5f5f5;
+  }
+
+  .form-section {
+    background: #fff;
+    border-radius: 20rpx;
+    margin: 20rpx;
+    padding: 20rpx;
+
+    .bottom-line {
+      border-bottom: 2rpx solid #eeeeee;
+    }
+  }
+
+  .title {
+    font-size: 12px;
+    font-family: PingFang SC;
+    font-weight: bold;
+    color: #141414;
+    align-items: center;
+    line-height: 80rpx;
+  }
+
+  .content {
+    textarea {
+      background: #fff;
+      width: 100%;
+      padding: 20rpx 0;
+      font-size: 12px;
+      margin-top: 20rpx;
+    }
+
+    .char-count {
+      margin-left: auto;
+    }
+
+    .attr-f {
+      .add-img {
+        width: 200rpx;
+        height: 200rpx;
+      }
+
+      .preview {
+        position: relative;
+        width: 230rpx;
+
+        .close {
+          position: absolute;
+          right: 30rpx;
+          font-size: 40rpx;
+        }
+      }
+    }
+  }
+
+  .action {
+    .col {
+      background: #fff;
+      border-bottom: 1px solid #f5f5f5;
+
+      .col-body {
+        display: flex;
+        justify-content: space-between;
+        line-height: 80rpx;
+      }
+
+      .col-tips {
+        line-height: 42rpx;
+        padding: 10rpx 3rpx;
+
+        .tips {
+          margin-left: 150rpx;
+          color: #d34217;
+          font-size: 22rpx;
+        }
+      }
+
+
+      .title {
+        width: 150rpx;
+
+        &::after {
+          content: ':';
+        }
+      }
+
+      .form-input {
+        flex: 1;
+        margin-left: 20rpx;
+
+        .input-row {
+          display: flex;
+          justify-content: flex-start;
+          flex-wrap: wrap;
+
+          .input-item-2 {
+            display: flex;
+            width: 48%;
+          }
+        }
+
+        /* 一行一个input */
+        input {
+          height: 60rpx;
+          line-height: 60rpx;
+          margin: 10rpx 20rpx 10rpx 0;
+          font-size: 12px;
+          color: #666;
+          background-color: #eee;
+          padding: 0 15rpx;
+        }
+
+        /* 一行2个input,且无前后文本 */
+        .input20 {
+          width: 200rpx;
+        }
+
+        /* 一行2个input,且有一个前或后文本 */
+        .input21 {
+          width: 160rpx;
+        }
+
+        /* 一行3个input,且无前后文本 */
+        .input30 {
+          width: 140rpx;
+        }
+
+        .input31 {
+          width: 30rpx;
+        }
+
+        .jiantou {
+          float: right;
+          width: 30rpx;
+          height: 30rpx;
+          margin-top: 25rpx;
+        }
+
+        picker {
+          flex: 1;
+        }
+
+        .pick-input {
+          display: flex;
+          justify-content: space-between;
+          margin: 0 20rpx;
+        }
+
+        .tip-info {
+          display: flex;
+          margin-left: 20rpx;
+        }
+      }
+    }
+
+    .desc {
+      font-size: 24rpx;
+      font-family: PingFang SC;
+
+      .notes-item {
+        margin-top: 10rpx;
+      }
+    }
+
+    .top_picker {
+      width: 100%;
+      align-items: center;
+      flex-wrap: wrap;
+
+      .picker-title {
+        height: 70rpx;
+        line-height: 70rpx;
+        border-bottom: none;
+        font-size: 28rpx;
+        margin: 10rpx 10rpx;
+      }
+
+      .picker-list {
+        display: flex;
+        justify-content: flex-start;
+        -webkit-box-lines: multiple;
+        -moz-box-lines: multiple;
+        -o-box-lines: multiple;
+        flex-wrap: wrap;
+      }
+
+      .top_item {
+        width: 23%;
+        margin: 10rpx 5rpx;
+        border: 1rpx solid #eee;
+        border-radius: 8rpx;
+
+        view {
+          text-align: center;
+          margin: 10rpx 0;
+        }
+
+        .term {}
+
+        .real_price {
+          font-size: 30rpx;
+          color: rgb(230, 9, 9);
+        }
+
+        .org_price {
+          height: 30rpx;
+          font-size: 24rpx;
+          color: #9bc2a8;
+        }
+      }
+
+      /* 选中时添加这个 样式 */
+      .item_checked {
+        position: relative;
+        background: rgb(213, 214, 235);
+
+        /* 三角形 */
+        &::before {
+          content: '';
+          display: inline-block;
+          position: absolute;
+          right: 0;
+          bottom: 0;
+          width: 0;
+          height: 0;
+          border-bottom: 40rpx solid #df0712;
+          border-left: 40rpx solid transparent;
+        }
+
+        /* 小勾 */
+        &::after {
+          content: '';
+          position: absolute;
+          right: 2rpx;
+          bottom: 10rpx;
+          width: 16rpx;
+          height: 8rpx;
+          display: inline-block;
+          border: 1px solid #fff;
+          border-width: 0 0 2rpx 2rpx;
+          transform: rotate(-45deg);
+          -ms-transform: rotate(-45deg);
+          -moz-transform: rotate(-45deg);
+          -webkit-transform: rotate(-45deg);
+          -o-transform: rotate(-45deg);
+          vertical-align: baseline;
+        }
+      }
+    }
+  }
+
+  .fix_bottom {
+    height: 120rpx;
+
+    .downButton {
+      .btn_pub {
+        width: 90%;
+        height: 80rpx;
+        line-height: 80rpx;
+        font-size: 34rpx;
+        color: #fff;
+        background: #06a8ff;
+      }
+    }
+  }
+
+  .alert {
+    display: flex;
+    margin: 20rpx;
+    padding: 20rpx;
+    height: 60rpx;
+    line-height: 60rpx;
+    font-size: 12px;
+    color: #8a8a8a;
+
+    .price {
+      .title {
+        color: #141414;
+      }
+
+      .price-name {
+        color: rgb(211, 7, 7);
+      }
+
+      .del-line {
+        text-decoration: line-through;
+        text-decoration-color: darkblue;
+      }
+    }
+
+    .term {
+      color: rgb(211, 7, 7);
+
+      .title {
+        margin-left: 20rpx;
+      }
+    }
+  }
+}
